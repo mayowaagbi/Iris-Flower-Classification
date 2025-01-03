@@ -32,7 +32,10 @@ function App() {
     };
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/predict/", data);
+      const response = await axios.post(
+        "http://iris-flower-classification-ni78.onrender.com/predict/",
+        data
+      );
       setPrediction(response.data.prediction);
     } catch (error) {
       console.error("Error during prediction:", error);
