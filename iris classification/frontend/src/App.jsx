@@ -33,7 +33,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://iris-flower-classification-ni78.onrender.com/predict/",
+        "https://iris-flower-classification-ni78.onrender.com/predict/",
         data
       );
       setPrediction(response.data.prediction);
