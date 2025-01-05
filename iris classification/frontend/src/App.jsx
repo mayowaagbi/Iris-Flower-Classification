@@ -43,64 +43,67 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Iris Flower Classification</h1>
-      <form onSubmit={handleSubmit} className="form-container">
-        <div className="form-field">
-          <label>Sepal Length (cm):</label>
-          <input
-            type="number"
-            name="sepalLength"
-            value={formData.sepalLength}
-            onChange={handleChange}
-            required
-          />
-        </div>
+    <>
+      <div className="App">
+        <h1>Iris Flower Classification</h1>
+        <form onSubmit={handleSubmit} className="form-container">
+          <div className="form-field">
+            <label>Sepal Length (cm):</label>
+            <input
+              type="number"
+              name="sepalLength"
+              value={formData.sepalLength}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <div className="form-field">
-          <label>Sepal Width (cm):</label>
-          <input
-            type="number"
-            name="sepalWidth"
-            value={formData.sepalWidth}
-            onChange={handleChange}
-            required
-          />
-        </div>
+          <div className="form-field">
+            <label>Sepal Width (cm):</label>
+            <input
+              type="number"
+              name="sepalWidth"
+              value={formData.sepalWidth}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <div className="form-field">
-          <label>Petal Length (cm):</label>
-          <input
-            type="number"
-            name="petalLength"
-            value={formData.petalLength}
-            onChange={handleChange}
-            required
-          />
-        </div>
+          <div className="form-field">
+            <label>Petal Length (cm):</label>
+            <input
+              type="number"
+              name="petalLength"
+              value={formData.petalLength}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <div className="form-field">
-          <label>Petal Width (cm):</label>
-          <input
-            type="number"
-            name="petalWidth"
-            value={formData.petalWidth}
-            onChange={handleChange}
-            required
-          />
-        </div>
+          <div className="form-field">
+            <label>Petal Width (cm):</label>
+            <input
+              type="number"
+              name="petalWidth"
+              value={formData.petalWidth}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <button type="submit" className="submit-button">
-          Predict
-        </button>
-      </form>
+          <button type="submit" className="submit-button">
+            Predict
+          </button>
+        </form>
 
-      {prediction && (
-        <div className="prediction">
-          <h2>Prediction: {prediction}</h2>
-        </div>
-      )}
-    </div>
+        {prediction && (
+          <div className="prediction">
+            <h2>Prediction: {prediction}</h2>
+          </div>
+        )}
+      </div>
+      <footer className="footer">By Agbi Olumayowa Olufemi</footer>
+    </>
   );
 }
 

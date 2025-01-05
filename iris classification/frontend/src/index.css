@@ -23,6 +23,7 @@ body {
 /* Form Styles */
 .form-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -88,4 +89,12 @@ button.submit-button:hover {
   text-align: center;
   font-weight: bold;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  text-align: left;
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bolder;
+  color: black;
 }
